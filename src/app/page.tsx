@@ -19,10 +19,10 @@ export default function Home() {
       {/* Main Content */}
       <div className="relative z-10 flex flex-col min-h-screen">
         <Header />
-        <div className="flex-grow">
+        <main className="flex-grow">
           <Hero />
           <Features />
-        </div>
+        </main>
         <Footer />
       </div>
     </main>
