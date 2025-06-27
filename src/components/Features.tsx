@@ -92,8 +92,8 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 bg-gradient-to-b from-white/80 to-gray-50/80 backdrop-blur-sm border-t border-gray-100/50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
