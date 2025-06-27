@@ -108,7 +108,7 @@ const Hero = () => {
               <span className="block text-gray-900 mb-2">
                 Transform Your
               </span>
-              <span className="block gradient-text mb-2">
+              <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent mb-2">
                 Documents into
               </span>
               <span className="block text-gray-900">
@@ -146,14 +146,14 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
           >
-            <button className="group bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center space-x-2">
+            <button className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-2xl font-semibold text-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center space-x-3 border border-white/20">
               <span>Start Free Trial</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </button>
-            
-            <button className="group flex items-center space-x-2 text-gray-700 hover:text-primary-600 transition-colors duration-200 px-6 py-4">
-              <div className="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center group-hover:shadow-lg transition-shadow duration-200">
-                <Play className="w-5 h-5 text-primary-600 ml-1" />
+
+            <button className="group flex items-center space-x-3 text-gray-700 hover:text-blue-600 transition-colors duration-200 px-8 py-4 bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-200/50 hover:border-blue-200 hover:bg-white/90">
+              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shadow-md flex items-center justify-center group-hover:shadow-lg transition-all duration-200 group-hover:scale-110">
+                <Play className="w-5 h-5 text-white ml-1" />
               </div>
               <span className="font-medium">Watch Demo</span>
             </button>
@@ -164,16 +164,16 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-20"
           >
             {features.map((feature, index) => (
               <div key={index} className="relative group">
-                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 border border-gray-200/50 group-hover:border-primary-200">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200">
-                    <feature.icon className="w-6 h-6 text-white" />
+                <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200/50 group-hover:border-blue-300 group-hover:bg-white h-full flex flex-col">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-200 shadow-lg mx-auto lg:mx-0">
+                    <feature.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">{feature.title}</h3>
-                  <p className="text-gray-600 text-sm">{feature.description}</p>
+                  <h3 className="font-bold text-gray-900 mb-3 text-lg text-center lg:text-left">{feature.title}</h3>
+                  <p className="text-gray-600 text-center lg:text-left flex-grow">{feature.description}</p>
                 </div>
                 
                 {/* Connector Arrow */}
@@ -191,23 +191,25 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
-            className="bg-white/60 backdrop-blur-md rounded-2xl p-8 shadow-soft border border-gray-200/50"
+            className="bg-gradient-to-r from-white/80 to-blue-50/80 backdrop-blur-md rounded-3xl p-10 shadow-2xl border border-blue-200/50"
           >
-            <div className="flex items-center justify-center mb-6">
-              <Sparkles className="w-6 h-6 text-primary-500 mr-2" />
-              <h3 className="text-lg font-semibold text-gray-900">Live Platform Statistics</h3>
+            <div className="flex items-center justify-center mb-8">
+              <Sparkles className="w-8 h-8 text-blue-500 mr-3 animate-pulse" />
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Live Platform Statistics</h3>
             </div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="flex items-center justify-center mb-2">
-                    <stat.icon className="w-8 h-8 text-primary-500" />
+                <div key={index} className="text-center group">
+                  <div className="flex items-center justify-center mb-6">
+                    <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-200">
+                      <stat.icon className="w-10 h-10 text-white" />
+                    </div>
                   </div>
-                  <div className="text-3xl font-bold text-gray-900 mb-1">
+                  <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-3">
                     {stat.value}{stat.suffix}
                   </div>
-                  <div className="text-gray-600 text-sm">{stat.label}</div>
+                  <div className="text-gray-600 font-semibold text-lg">{stat.label}</div>
                 </div>
               ))}
             </div>

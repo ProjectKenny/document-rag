@@ -119,11 +119,11 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="relative max-w-2xl mx-auto">
+    <div className="relative max-w-3xl mx-auto">
       {/* Search Input */}
       <div className="relative">
-        <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-          <Search className="h-6 w-6 text-gray-400" />
+        <div className="absolute inset-y-0 left-0 pl-6 flex items-center pointer-events-none">
+          <Search className="h-6 w-6 text-blue-500" />
         </div>
         
         <input
@@ -134,15 +134,15 @@ const SearchBar = () => {
           onFocus={handleFocus}
           onBlur={handleBlur}
           placeholder="Ask anything about your documents..."
-          className="w-full pl-12 pr-16 py-4 text-lg bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-soft focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 placeholder-gray-500"
+          className="w-full pl-16 pr-20 py-5 text-lg bg-white/95 backdrop-blur-sm border-2 border-blue-200/50 rounded-3xl shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 placeholder-gray-500 hover:border-blue-300"
         />
-        
+
         <div className="absolute inset-y-0 right-0 pr-4 flex items-center">
           <button
             onClick={handleSearch}
-            className="bg-gradient-to-r from-primary-500 to-primary-600 text-white p-2 rounded-xl hover:from-primary-600 hover:to-primary-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-3 rounded-2xl hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
-            <Sparkles className="h-5 w-5" />
+            <Sparkles className="h-6 w-6" />
           </button>
         </div>
       </div>

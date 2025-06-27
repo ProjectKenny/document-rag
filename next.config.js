@@ -6,6 +6,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  output: 'standalone',
+  generateBuildId: async () => {
+    return 'document-rag-build'
+  },
 };
 
 module.exports = nextConfig;

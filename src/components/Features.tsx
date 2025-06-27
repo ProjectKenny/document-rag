@@ -104,10 +104,10 @@ const Features = () => {
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             Powerful Features for
-            <span className="block gradient-text">Document Intelligence</span>
+            <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent">Document Intelligence</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Everything you need to transform your documents into an intelligent, 
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Everything you need to transform your documents into an intelligent,
             searchable knowledge base powered by cutting-edge AI technology.
           </p>
         </motion.div>
@@ -121,29 +121,29 @@ const Features = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="group relative bg-white rounded-3xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 border border-gray-100 hover:border-gray-200"
+              className="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200/50 hover:border-blue-200 hover:bg-white/95"
             >
               {/* Background Gradient */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-5 rounded-3xl transition-opacity duration-300`} />
+              <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-10 rounded-3xl transition-opacity duration-300`} />
               
               <div className="relative z-10">
                 {/* Icon */}
-                <div className={`w-16 h-16 bg-gradient-to-br ${feature.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <feature.icon className="w-8 h-8 text-white" />
+                <div className={`w-20 h-20 bg-gradient-to-br ${feature.gradient} rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                  <feature.icon className="w-10 h-10 text-white" />
                 </div>
 
                 {/* Content */}
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-600 mb-8 leading-relaxed text-lg">
                   {feature.description}
                 </p>
 
                 {/* Stats */}
-                <div className="flex items-center space-x-2">
-                  <div className={`w-2 h-2 bg-gradient-to-r ${feature.gradient} rounded-full`} />
-                  <span className="text-sm font-medium text-gray-700">
+                <div className="flex items-center space-x-3">
+                  <div className={`w-3 h-3 bg-gradient-to-r ${feature.gradient} rounded-full animate-pulse`} />
+                  <span className="text-sm font-semibold text-gray-700">
                     {feature.stats}
                   </span>
                 </div>
