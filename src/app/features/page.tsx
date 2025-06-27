@@ -1,4 +1,5 @@
-import { Metadata } from 'next';
+'use client';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
@@ -18,11 +19,6 @@ import {
   CheckCircle,
   ArrowRight
 } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'Features | Document-RAG',
-  description: 'Explore the powerful features of Document-RAG including AI-powered document processing, intelligent search, and enterprise security.',
-};
 
 export default function FeaturesPage() {
   const heroFeatures = [

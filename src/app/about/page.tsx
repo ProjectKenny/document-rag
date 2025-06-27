@@ -1,22 +1,17 @@
-import { Metadata } from 'next';
+'use client';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
-import { 
-  Target, 
-  Users, 
-  Award, 
+import {
+  Target,
+  Users,
   Lightbulb,
   Heart,
   Globe,
   Zap,
   Shield
 } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'About Us | Document-RAG',
-  description: 'Learn about Document-RAG\'s mission to transform document intelligence through advanced AI and RAG technology.',
-};
 
 export default function AboutPage() {
   const values = [
@@ -29,7 +24,7 @@ export default function AboutPage() {
     {
       icon: Users,
       title: 'User-Centric',
-      description: 'Every feature we build is designed with our users\' needs and workflows in mind.',
+      description: 'Every feature we build is designed with our users&apos; needs and workflows in mind.',
       gradient: 'from-purple-500 to-pink-500'
     },
     {
@@ -104,7 +99,7 @@ export default function AboutPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-xl text-gray-600 max-w-3xl mx-auto mb-12"
             >
-              We're on a mission to make every document intelligent, searchable, and actionable 
+              We&apos;re on a mission to make every document intelligent, searchable, and actionable
               through the power of advanced AI and Retrieval-Augmented Generation technology.
             </motion.p>
 
@@ -142,13 +137,13 @@ export default function AboutPage() {
                 Our Mission
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                In today's information-rich world, organizations struggle to extract meaningful 
+                In today&apos;s information-rich world, organizations struggle to extract meaningful
                 insights from their vast document repositories. We believe that every piece of 
                 written knowledge should be instantly accessible and actionable.
               </p>
               <p className="text-lg text-gray-600 mb-6">
                 Document-RAG was born from the vision of democratizing access to information 
-                through AI. We're building the future where asking questions about your documents 
+                through AI. We&apos;re building the future where asking questions about your documents
                 is as natural as having a conversation.
               </p>
               <div className="flex items-center space-x-4">

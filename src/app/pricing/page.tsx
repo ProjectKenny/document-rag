@@ -1,25 +1,20 @@
-import { Metadata } from 'next';
+'use client';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
-import { 
-  Check, 
-  X, 
-  Star, 
-  Zap, 
-  Shield, 
-  Users, 
+import {
+  Check,
+  X,
+  Star,
+  Zap,
+  Shield,
+  Users,
   ArrowRight,
   FileText,
-  MessageSquare,
   BarChart3,
   Headphones
 } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'Pricing | Document-RAG',
-  description: 'Choose the perfect plan for your document intelligence needs. From individual users to enterprise organizations.',
-};
 
 export default function PricingPage() {
   const plans = [
@@ -131,7 +126,7 @@ export default function PricingPage() {
     },
     {
       question: 'What happens if I exceed my plan limits?',
-      answer: 'We\'ll notify you when you approach your limits. You can upgrade your plan or purchase additional capacity as needed.'
+      answer: 'We&apos;ll notify you when you approach your limits. You can upgrade your plan or purchase additional capacity as needed.'
     }
   ];
 
@@ -309,7 +304,7 @@ export default function PricingPage() {
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-600">
-              Got questions? We've got answers.
+              Got questions? We&apos;ve got answers.
             </p>
           </motion.div>
 

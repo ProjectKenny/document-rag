@@ -220,7 +220,7 @@ const SearchBar = () => {
           className="mt-4 text-center"
         >
           <p className="text-gray-500 text-sm">
-            Try: "Summarize the key points" or "Find budget information"
+            Try: &quot;Summarize the key points&quot; or &quot;Find budget information&quot;
           </p>
         </motion.div>
       )}

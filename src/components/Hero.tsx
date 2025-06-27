@@ -2,12 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Upload, 
-  Search, 
-  Brain, 
-  Zap, 
-  ArrowRight, 
+import {
+  Upload,
+  Search,
+  Brain,
+  ArrowRight,
   Play,
   FileText,
   MessageSquare,
@@ -17,7 +16,6 @@ import {
 import SearchBar from './SearchBar';
 
 const Hero = () => {
-  const [currentStat, setCurrentStat] = useState(0);
   const [documentsProcessed, setDocumentsProcessed] = useState(0);
   const [queriesAnswered, setQueriesAnswered] = useState(0);
   const [accuracyRate, setAccuracyRate] = useState(0);

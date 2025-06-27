@@ -3,14 +3,13 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Menu, 
-  X, 
-  FileText, 
-  Search, 
-  Brain, 
-  Zap,
-  ChevronDown 
+import {
+  Menu,
+  X,
+  FileText,
+  Search,
+  Brain,
+  Zap
 } from 'lucide-react';
 
 const Header = () => {

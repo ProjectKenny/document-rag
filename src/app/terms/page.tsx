@@ -1,13 +1,9 @@
-import { Metadata } from 'next';
+'use client';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
 import { FileText, Users, Shield, AlertTriangle, Scale, CreditCard } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'Terms of Service | Document-RAG',
-  description: 'Read our Terms of Service to understand the rules and guidelines for using Document-RAG.',
-};
 
 export default function TermsPage() {
   const lastUpdated = "December 27, 2024";
@@ -116,7 +112,7 @@ export default function TermsPage() {
               Welcome to Document-RAG
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              These Terms of Service ("Terms") govern your access to and use of Document-RAG's 
+              These Terms of Service (&quot;Terms&quot;) govern your access to and use of Document-RAG&apos;s
               document intelligence platform and related services. By using our services, you 
               agree to these Terms. Please read them carefully before using our platform.
             </p>

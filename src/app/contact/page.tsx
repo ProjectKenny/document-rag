@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
@@ -65,7 +64,7 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: 'Email Us',
-      description: 'Send us an email and we\'ll respond within 24 hours',
+      description: 'Send us an email and we&apos;ll respond within 24 hours',
       contact: 'hello@document-rag.com',
       action: 'mailto:hello@document-rag.com'
     },
@@ -86,7 +85,7 @@ export default function ContactPage() {
     {
       icon: Clock,
       title: 'Business Hours',
-      description: 'We\'re here to help during these hours',
+      description: 'We&apos;re here to help during these hours',
       contact: 'Mon-Fri: 9AM-6PM PST',
       action: '#'
     }
@@ -131,11 +130,11 @@ export default function ContactPage() {
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
               Get in Touch
-              <span className="block gradient-text">We're Here to Help</span>
+              <span className="block gradient-text">We&apos;re Here to Help</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Have questions about Document-RAG? Need technical support? 
-              Want to discuss enterprise solutions? We'd love to hear from you.
+              Want to discuss enterprise solutions? We&apos;d love to hear from you.
             </p>
           </motion.div>
 
@@ -185,7 +184,7 @@ export default function ContactPage() {
                 Send us a Message
               </h2>
               <p className="text-gray-600 mb-8">
-                Fill out the form below and we'll get back to you as soon as possible.
+                Fill out the form below and we&apos;ll get back to you as soon as possible.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">

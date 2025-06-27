@@ -1,13 +1,9 @@
-import { Metadata } from 'next';
+'use client';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
 import { Shield, Lock, Eye, UserCheck, FileText, Globe } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'Privacy Policy | Document-RAG',
-  description: 'Learn how Document-RAG protects your privacy and handles your data with transparency and security.',
-};
 
 export default function PrivacyPage() {
   const lastUpdated = "December 27, 2024";
@@ -62,7 +58,7 @@ export default function PrivacyPage() {
       title: "Data Sharing",
       content: [
         "We never sell your personal information",
-        "We don't use your documents to train our AI models",
+        "We don&apos;t use your documents to train our AI models",
         "Limited sharing with trusted service providers",
         "Legal compliance when required by law",
         "Your explicit consent for any other sharing"
@@ -205,7 +201,7 @@ export default function PrivacyPage() {
             {/* Children's Privacy */}
             <div className="bg-white rounded-2xl p-8 shadow-soft">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Children's Privacy
+                Children&apos;s Privacy
               </h3>
               <p className="text-gray-600">
                 Our services are not intended for children under 13 years of age. We do not knowingly 
@@ -224,7 +220,7 @@ export default function PrivacyPage() {
                 We may update this Privacy Policy from time to time to reflect changes in our practices 
                 or for other operational, legal, or regulatory reasons. We will notify you of any 
                 material changes by posting the new Privacy Policy on this page and updating the 
-                "Last updated" date.
+                &quot;Last updated&quot; date.
               </p>
               <p className="text-gray-600">
                 We encourage you to review this Privacy Policy periodically to stay informed about 
