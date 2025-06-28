@@ -72,14 +72,14 @@ export default function ContactPage() {
       icon: Phone,
       title: 'Call Us',
       description: 'Speak with our team during business hours',
-      contact: '+1 (555) 123-4567',
-      action: 'tel:+15551234567'
+      contact: '+65 (8) 268-7400',
+      action: 'tel:+6582687400'
     },
     {
       icon: MapPin,
       title: 'Visit Us',
       description: 'Come visit our office in San Francisco',
-      contact: '123 Innovation Drive, San Francisco, CA 94105',
+      contact: 'Downtown, Core SGP, SG 179435',
       action: '#'
     },
     {
@@ -201,7 +201,7 @@ export default function ContactPage() {
                       onChange={handleInputChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
-                      placeholder="John Doe"
+                      placeholder="John E. Washington"
                     />
                   </div>
                   <div>
@@ -233,7 +233,7 @@ export default function ContactPage() {
                       value={formData.company}
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
-                      placeholder="Your Company"
+                      placeholder="Name of Company"
                     />
                   </div>
                   <div>

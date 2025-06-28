@@ -110,11 +110,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
                 <Phone className="w-5 h-5" />
-                <span>+1 (555) 123-4567</span>
+                <span>+65 (8) 268-7400</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
                 <MapPin className="w-5 h-5" />
-                <span>San Francisco, CA</span>
+                <span>Downtown, SG</span>
               </div>
             </div>
 
@@ -205,13 +205,13 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
-              <span>© 2024 Document-RAG. Made with</span>
+              <span>© 2023-2025 DocumentRAG Platform. Made with</span>
               <Heart className="w-4 h-4 text-red-500" />
-              <span>for better document intelligence.</span>
+              <span>for RAG document appropriation.</span>
             </div>
 
             <div className="text-gray-400 text-sm mt-4 sm:mt-0">
-              All rights reserved.
+              All rights reserved. By <a href="https://kennytan.net" target="_blank" rel="noopener noreferrer" className="text-grey-400 hover:text-grey-300">KennyTan.net</a>
             </div>
           </div>
         </div>
